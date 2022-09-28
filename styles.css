@@ -21,3 +21,9 @@ header {
     position: relative;
 }
 
+main .city {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 8px;
+}
+

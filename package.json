@@ -1,0 +1,22 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "projet openclassrooms p3 ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolyba/OhMyFood.git"
+  },
+  "author": "ibrahim issilame djaoid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nolyba/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/nolyba/OhMyFood#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}

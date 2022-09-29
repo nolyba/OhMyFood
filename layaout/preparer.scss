@@ -1,0 +1,41 @@
+
+
+.preparer {
+    counter-reset: steps;
+    & ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    & li {
+        position: relative;
+        &::before {
+            content: counter(steps);
+            counter-increment: steps;
+            color: white;
+            background-color: #9356dc;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 16px;
+            left: -16px;
+
+
+        }
+        list-style-type: none;
+        background-color: #f6f6f6;
+        padding: 20px 32px;
+        flex-grow: 1;
+        border-radius: 16px;
+        & i.fas {
+            margin-right: 16px;
+            font-size: 24px;
+        }
+        
+     
+    }
+}

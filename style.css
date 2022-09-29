@@ -697,6 +697,10 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+main {
+  padding: 0 16px;
+}
+
 header {
   font-family: "Shrikhand", "cursive";
   text-align: center;
@@ -706,22 +710,19 @@ header {
   position: relative;
 }
 
-main .city {
+.city {
   background-color: lightgrey;
   text-align: center;
   padding: 8px;
 }
 
-/*EXPLORER*/
 .explorer {
   text-align: center;
 }
-
 .explorer h2 {
   margin-top: 16px;
   font-size: 16px;
 }
-
 .explorer button {
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   color: white;
@@ -731,10 +732,45 @@ main .city {
   border: none;
   border-radius: 16px;
 }
-
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+.preparer {
+  counter-reset: steps;
+}
+.preparer ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.preparer li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 20px 32px;
+  flex-grow: 1;
+  border-radius: 16px;
+}
+.preparer li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 16px;
+  left: -16px;
+}
+.preparer li i.fas {
+  margin-right: 16px;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

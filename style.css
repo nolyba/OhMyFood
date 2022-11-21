@@ -64,6 +64,10 @@ body, html {
 .foot p {
   padding: 0.2rem;
 }
+.foot a {
+  color: white;
+  text-decoration: none;
+}
 
 .loader {
   position: fixed;
